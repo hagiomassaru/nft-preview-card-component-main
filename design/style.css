@@ -23,6 +23,9 @@ body {
 h2,p{
     margin-top: 23px;
 }
+p{
+    font-size: 18px;
+}
 .container-par{
     font-weight: 300;
     color: var(--soft-blue);
@@ -45,13 +48,14 @@ span{
     overflow: hidden;
 }
 
-.container div:nth-of-type(1) {
+.container div:nth-of-type(2) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     margin-top: 23px;
     text-align: center;
+    font-size: 16px;
 }
 .line{
     width: 100%;
@@ -62,19 +66,32 @@ span{
 .container img {
     border-radius: 10px;
 }
+.background-image{
+    position: absolute;
+    width: 302px;
+    height: 302px;
+    border-radius: 10px;
+    background: rgb(247, 240, 240);
+    opacity: 0;
+}
+.background-image:hover{
+    opacity: 0.4;
+}
 .cripto{
     color: var(--cyan);
     list-style-image: url(../images/icon-ethereum.svg);
+    
 }
 .time{
     list-style-image: url(../images/icon-clock.svg);
 }
-.container div:nth-of-type(3){
+.container div:nth-of-type(4){
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
     column-gap: 17px;
+    
 }
 .avatar{
     width: 36px;
@@ -83,11 +100,13 @@ span{
     background-position: center;
     background-size: cover;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-radius: 100%;
 }
 .avatar-text{
-    color: var(--soft-blue);;
+    color: var(--soft-blue);
+
+    font-size: 16px;
 }
 span{
     color: white
