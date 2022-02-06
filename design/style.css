@@ -20,7 +20,7 @@ body {
     transform: translate(-50%, -25%);
     background: var(--main-bg);
 }
-h2,p{
+.margin-top{
     margin-top: 23px;
 }
 p{
@@ -80,6 +80,7 @@ span{
 .cripto{
     color: var(--cyan);
     list-style-image: url(../images/icon-ethereum.svg);
+    line-height: 100%;
     
 }
 .time{
@@ -90,6 +91,7 @@ span{
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
+    margin-top: 23px;
     column-gap: 17px;
     
 }
@@ -104,10 +106,23 @@ span{
     border-radius: 100%;
 }
 .avatar-text{
+    display: table-cell;
     color: var(--soft-blue);
-
+    vertical-align: middle;
     font-size: 16px;
 }
 span{
     color: white
+}
+
+.attribution{
+    width: 100%;
+    margin-top: 30px;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
