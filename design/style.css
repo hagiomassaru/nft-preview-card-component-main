@@ -71,11 +71,12 @@ span{
     width: 302px;
     height: 302px;
     border-radius: 10px;
-    background: rgb(247, 240, 240);
+    background: var(--cyan);
     opacity: 0;
 }
 .background-image:hover{
     opacity: 0.4;
+    
 }
 .cripto{
     color: var(--cyan);
