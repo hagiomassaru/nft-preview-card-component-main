@@ -48,7 +48,7 @@ span{
     overflow: hidden;
 }
 
-.container div:nth-of-type(2) {
+.money-and-date {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,7 +87,7 @@ span{
 .time{
     list-style-image: url(../images/icon-clock.svg);
 }
-.container div:nth-of-type(4){
+.avatar-footer{
     display: flex;
     justify-content: flex-start;
     align-items: center;
