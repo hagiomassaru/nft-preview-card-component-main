@@ -21,7 +21,14 @@ body {
     background: var(--main-bg);
 }
 .margin-top{
-    margin-top: 23px;
+    margin-top: 23px;    
+}
+.margin-top a{
+    text-decoration: none;
+    color: var(--white);
+}
+.margin-top a:hover{
+    color: var(--cyan);
 }
 p{
     font-size: 18px;
@@ -57,6 +64,22 @@ span{
     text-align: center;
     font-size: 16px;
 }
+.cripto-element{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 8px;
+    width: 50%;
+}
+.cripto{
+    color: var(--cyan);
+}
+.time-element{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 8px;
+    width: 50%;
+}
+
 .line{
     width: 100%;
     height: 1px;
@@ -65,27 +88,22 @@ span{
 }
 .container img {
     border-radius: 10px;
+    z-index: 1;
 }
 .background-image{
     position: absolute;
-    width: 302px;
-    height: 302px;
+    width: 304px;
+    height: 305px;
     border-radius: 10px;
-    background: var(--cyan);
+    background-image: url(../images/icon-view.svg);
+    background-color: rgba(0,255,248,0.4);
+    background-repeat: no-repeat;
+    background-position: center;
     opacity: 0;
+    z-index: 2;
 }
 .background-image:hover{
-    opacity: 0.4;
-    
-}
-.cripto{
-    color: var(--cyan);
-    list-style-image: url(../images/icon-ethereum.svg);
-    line-height: 100%;
-    
-}
-.time{
-    list-style-image: url(../images/icon-clock.svg);
+    opacity: 1;
 }
 .avatar-footer{
     display: flex;
@@ -127,3 +145,4 @@ span{
     transform: translateX(-50%);
 
 }
+
