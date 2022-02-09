@@ -23,13 +23,6 @@ body {
 .margin-top{
     margin-top: 23px;    
 }
-.margin-top a{
-    text-decoration: none;
-    color: var(--white);
-}
-.margin-top a:hover{
-    color: var(--cyan);
-}
 p{
     font-size: 18px;
 }
@@ -37,20 +30,17 @@ p{
     font-weight: 300;
     color: var(--soft-blue);
 }
-span{
-    color: var(--white);
-}
 .container {
     display: flex;
     flex-direction: column;
     padding: 23px;
     width: 350px;
     border-radius: 20px;
-
+    
     font-size: 18px;
     font-family: "Outfit", sans-serif;
     color: white;
-
+    
     background: var(--card-bg);
     overflow: hidden;
 }
@@ -104,6 +94,8 @@ span{
 }
 .background-image:hover{
     opacity: 1;
+
+    cursor: pointer;
 }
 .avatar-footer{
     display: flex;
@@ -130,16 +122,19 @@ span{
     vertical-align: middle;
     font-size: 16px;
 }
-span{
-    color: white
+a{
+    text-decoration: none;
+    color: white;
 }
-
+a:hover{
+    color: var(--cyan);
+}
 .attribution{
     width: 100%;
     margin-top: 30px;
     font-family: "Outfit", sans-serif;
     font-size: 18px;
-    color: white;
+    color: rgb(25, 92, 216);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
